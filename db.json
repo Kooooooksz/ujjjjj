@@ -1,9 +1,287 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "users": [
+    {
+      "name": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "email": "admin@learningplatform.com",
+      "courses": ["b0bb", "5a79", "d693", "3", "6", "1"],
+      "created_at": "26/03/2024",
+      "id": "e124"
+    },
+    {
+      "name": "john_doe",
+      "password": "password123",
+      "role": "student",
+      "email": "john.doe@example.com",
+      "courses": [],
+      "created_at": "15/02/2024",
+      "progress": {
+        "course_001": "50%",
+        "course_003": "30%"
+      },
+      "id": "0272"
+    },
+    {
+      "name": "jane_smith",
+      "password": "securePass456",
+      "role": "student",
+      "email": "jane.smith@example.com",
+      "courses": [],
+      "created_at": "01/03/2024",
+      "progress": {
+        "course_002": "80%",
+        "course_003": "60%"
+      },
+      "id": "2bd5"
+    },
+    {
+      "name": "mary_jones",
+      "password": "jonesPass789",
+      "role": "teacher",
+      "email": "mary.jones@learningplatform.com",
+      "created_at": "10/12/2023",
+      "assigned_courses": [
+        "hulala",
+        "hulala",
+        "hulala",
+        "hulala",
+        "hulala",
+        "hulala",
+        "asdfgdsfhg",
+        "Introduction to Programming",
+        "Introduction to Programmingf"
+      ],
+      "id": "0e51"
+    },
+    {
+      "name": "mark_taylor",
+      "password": "markPass123",
+      "role": "teacher",
+      "email": "mark.taylor@learningplatform.com",
+      "created_at": "05/01/2024",
+      "assigned_courses": ["hulala"],
+      "id": "d19d"
+    },
+    {
+      "id": "d9c5",
+      "name": "New Teacher",
+      "password": "123456",
+      "role": "teacher",
+      "email": "teacher@gmail.com",
+      "assigned_courses": ["hulala", "Introduction to Programming"],
+      "created_at": "4/4/2025"
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "courses": [
+    {
+      "id": "1",
+      "course_name": "Introduction to Programming",
+      "description": "Learn the fundamentals of programming with this introductory course.",
+      "course_image": "course1.png",
+      "teacher": "mary_jones",
+      "created_at": "2025-01-10",
+      "modules": [
+        {
+          "module_id": "module_001",
+          "title": "Basic Syntax",
+          "content": "Introduction to variables, data types, and operators."
+        },
+        {
+          "module_id": "module_002",
+          "title": "Control Flow",
+          "content": "Understanding conditionals and loops."
+        }
+      ]
+    },
+    {
+      "course_name": "Web Development Basics",
+      "description": "Learn the fundamentals of developing a good-looking, modern webpage.",
+      "course_image": "course2.png",
+      "teacher": "",
+      "created_at": "2023-02-05",
+      "modules": [
+        {
+          "module_id": "module_003",
+          "title": "HTML Basics",
+          "content": "Introduction to HTML structure and elements."
+        },
+        {
+          "module_id": "module_004",
+          "title": "CSS Styling",
+          "content": "Learn the basics of styling webpages with CSS."
+        }
+      ],
+      "id": "2"
+    },
+    {
+      "course_name": "JavaScript for Beginners",
+      "description": "Learn the fundamentals of JavaScript programming language.",
+      "course_image": "course3.png",
+      "teacher": "",
+      "created_at": "2024-03-01",
+      "modules": [
+        {
+          "module_id": "module_005",
+          "title": "JavaScript Syntax",
+          "content": "Basic syntax of JavaScript, including functions and variables."
+        },
+        {
+          "module_id": "module_006",
+          "title": "DOM Manipulation",
+          "content": "Interacting with the DOM using JavaScript."
+        }
+      ],
+      "id": "3"
+    },
+    {
+      "course_name": "Very Advanced JavaScript",
+      "description": "Deep dive into JavaScript concepts such as closures, promises, and async/await.",
+      "course_image": "course4.png",
+      "teacher": "",
+      "created_at": "2026-03-15",
+      "modules": [
+        {
+          "module_id": "module_007",
+          "title": "Closures and Scope",
+          "content": "Understanding closures, lexical scope, and hoisting."
+        },
+        {
+          "module_id": "module_008",
+          "title": "Asynchronous JavaScript",
+          "content": "Promises, async/await, and event loop."
+        }
+      ],
+      "id": "4"
+    },
+    {
+      "course_name": "Data Structures and Algorithms",
+      "description": "Learn fundamental data structures and algorithms.",
+      "course_image": "course5.png",
+      "teacher": "",
+      "created_at": "2025-04-15",
+      "modules": [
+        {
+          "module_id": "module_011",
+          "title": "Arrays and Linked Lists",
+          "content": "Understanding arrays, linked lists, and their operations."
+        },
+        {
+          "module_id": "module_012",
+          "title": "Sorting Algorithms",
+          "content": "QuickSort, MergeSort, and BubbleSort explained."
+        }
+      ],
+      "id": "5"
+    },
+    {
+      "course_name": "React.js Fundamentals",
+      "description": "Learn the basics of React.js for modern frontend development.",
+      "course_image": "course6.png",
+      "teacher": "",
+      "created_at": "2024-05-15",
+      "modules": [
+        {
+          "module_id": "module_015",
+          "title": "JSX and Components",
+          "content": "Understanding JSX syntax and React components."
+        },
+        {
+          "module_id": "module_016",
+          "title": "State and Props",
+          "content": "Managing component state and props in React."
+        }
+      ],
+      "id": "6"
+    },
+    {
+      "course_name": "Node.js for Beginners",
+      "description": "Learn how to build backend applications using Node.js.",
+      "course_image": "course7.png",
+      "teacher": "",
+      "created_at": "2020-06-01",
+      "modules": [
+        {
+          "module_id": "module_017",
+          "title": "Node.js Basics",
+          "content": "Introduction to Node.js and package management."
+        },
+        {
+          "module_id": "module_018",
+          "title": "Building an API",
+          "content": "Creating a RESTful API using Express.js."
+        }
+      ],
+      "id": "7"
+    },
+    {
+      "course_name": "Database Management 3",
+      "description": "Modified database",
+      "course_image": "course8.png",
+      "teacher": "",
+      "created_at": "4/2/2025",
+      "modules": [],
+      "id": "8"
+    },
+    {
+      "course_name": "C++ Programming",
+      "description": "Learn C++ programming language from the ground up.",
+      "course_image": "course9.png",
+      "teacher": "",
+      "created_at": "2024-07-15",
+      "modules": [
+        {
+          "module_id": "module_023",
+          "title": "C++ Syntax",
+          "content": "Understanding C++ syntax and data types."
+        },
+        {
+          "module_id": "module_024",
+          "title": "OOP in C++",
+          "content": "Introduction to object-oriented programming in C++."
+        }
+      ],
+      "id": "9"
+    },
+    {
+      "course_name": "Artificial Intelligence Basics",
+      "description": "Learn about artificial intelligence and neural networks.",
+      "course_image": "course10.png",
+      "teacher": "",
+      "created_at": "2022-08-01",
+      "modules": [
+        {
+          "module_id": "module_025",
+          "title": "Introduction to AI",
+          "content": "Overview of artificial intelligence and its applications."
+        },
+        {
+          "module_id": "module_026",
+          "title": "Neural Networks",
+          "content": "Basics of deep learning and neural networks."
+        }
+      ],
+      "id": "10"
+    },
+    {
+      "course_name": "Django Web Development",
+      "description": "Learn how to develop web applications using Django.",
+      "course_image": "course11.png",
+      "teacher": "",
+      "created_at": "2023-08-15",
+      "modules": [
+        {
+          "module_id": "module_027",
+          "title": "Django Basics",
+          "content": "Setting up a Django project and creating models."
+        },
+        {
+          "module_id": "module_028",
+          "title": "Templates and Views",
+          "content": "Using Django templates and views to build dynamic web pages."
+        }
+      ],
+      "id": "11"
+    }
+  ]
 }
